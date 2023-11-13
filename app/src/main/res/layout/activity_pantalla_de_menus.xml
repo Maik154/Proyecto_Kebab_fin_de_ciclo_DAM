@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".Principales.PantallaDeMenusActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/fondo"
+            tools:context=".Principales.PantallaDeMenusActivity">
+
+            <TextView
+                android:id="@+id/txtPizza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="88dp"
+                android:text="Pizza"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgPizza" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="32dp"
+                android:text="Comida prueba"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="60dp"
+                android:text="Precio"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="83dp"
+                android:layout_height="85dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.619"
+                app:layout_constraintStart_toEndOf="@+id/textInputLayout"
+                app:layout_constraintTop_toBottomOf="@+id/txtPizza"
+                app:srcCompat="@drawable/icono_buscar_foreground" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="152dp"
+                android:fontFamily="@font/roboto_black"
+                android:text="@string/txtBarraBusquedaFuera"
+                app:layout_constraintEnd_toStartOf="@+id/imageView7"
+                app:layout_constraintHorizontal_bias="0.436"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtGuarnicion" />
+
+            <ImageView
+                android:id="@+id/imgKebab"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="80dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton9"
+                app:srcCompat="@mipmap/foto_comida_demo" />
+
+            <ImageView
+                android:id="@+id/imgGuarnicion"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="28dp"
+                android:onClick="btnPantMenusToPantGuarnicionBebidas"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtKebab"
+                app:srcCompat="@mipmap/foto_comida_demo" />
+
+            <ImageView
+                android:id="@+id/imgPizza"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="44dp"
+                android:onClick="btnPantMenusToPantProducto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtBebidas"
+                app:srcCompat="@mipmap/foto_comida_demo" />
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView7"
+                app:srcCompat="@mipmap/foto_comida_demo" />
+
+            <ImageView
+                android:id="@+id/imgBebidas"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_marginTop="81dp"
+                android:layout_marginEnd="44dp"
+                android:onClick="btnPantMenusToPantGuarnicionBebidas"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView27"
+                app:srcCompat="@mipmap/foto_comida_demo" />
+
+            <TextView
+                android:id="@+id/txtKebab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="92dp"
+                android:layout_marginTop="28dp"
+                android:text="Kebab"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgKebab" />
+
+            <TextView
+                android:id="@+id/txtGuarnicion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="76dp"
+                android:layout_marginTop="12dp"
+                android:text="Guarnicion"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgGuarnicion" />
+
+            <TextView
+                android:id="@+id/txtBebidas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="72dp"
+                android:text="Bebidas"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgBebidas" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="49dp"
+                android:text="@string/txtApartadoPedidosMasPopulares"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView19"
+                tools:layout_editor_absoluteX="1dp">
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="260dp"
+                android:layout_height="47dp"
+                android:layout_marginEnd="1dp"
+                app:layout_constraintEnd_toStartOf="@+id/imageView7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView19">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:hint="Buscar productos" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageButton
+                android:id="@+id/imageButton9"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/fondo"
+                android:onClick="btnPantMenusToPantInicio"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icono_volver_foreground" />
+
+            <ImageView
+                android:id="@+id/imageView27"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:onClick="btnPantMenusToPantCarrito"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icono_carrito_foreground" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

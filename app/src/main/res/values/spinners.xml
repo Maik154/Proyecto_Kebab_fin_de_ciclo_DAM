@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Pantalla de pago -->
+    <string-array name="tiempo_de_espera">
+        <item>Lo antes posible</item>
+        <item>15 mins</item>
+        <item>30 mins</item>
+        <item>45 mins</item>
+        <item>1 mins</item>
+        <item>1h 15mins</item>
+        <item>1h 30mins</item>
+        <item>1h 45mins</item>
+        <item>2h</item>
+        <item>2h 15mins</item>
+        <item>2h 30mins</item>
+        <item>2h 45mins</item>
+        <item>3h</item>
+    </string-array>
+
+    <!-- Pantalla de producto -->
+    <string-array name="contenido">
+        <item>Mixto</item>
+        <item>Solo carne</item>
+        <item>Vegetal</item>
+    </string-array>
+
+    <string-array name="carnes">
+        <item>Pollo</item>
+        <item>Carne</item>
+        <item>Mixto</item>
+    </string-array>
+</resources>

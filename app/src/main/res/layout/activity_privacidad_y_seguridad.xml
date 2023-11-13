@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".TerminosYCondiciones.PrivacidadActivity">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/txtPantallaPrivacidadYSeguridad"
+        app:layout_constraintBottom_toTopOf="@+id/textView17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:onClick="btnPantPrivacidadToPantAjustesUsuario"
+        android:text="@string/txtBtnPantPrivacidadYSeguridadSeguridadToPantAjustesUsuario"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button9"
+        app:srcCompat="@drawable/icono_privacidad_background" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="382dp"
+        android:layout_height="331dp"
+        android:layout_marginTop="134dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend a metus in posuere. Etiam non aliquam eros, blandit luctus lacus. Nullam a tortor vel sem porttitor tempus a vel augue. Nullam commodo consectetur turpis, id sagittis tortor gravida nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus eleifend, ante sed aliquet finibus, enim lectus consequat velit, eu laoreet odio dui a ipsum. Proin finibus sem ut malesuada gravida. Nulla porttitor metus ac nibh pellentesque, non ullamcorper elit faucibus. Vestibulum tincidunt orci sed turpis dignissim, varius lobortis quam porta. In viverra arcu et diam feugiat, sit amet dignissim eros porttitor. Vestibulum quis risus nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Suspendisse euismod dolor non quam consectetur, vel laoreet quam pretium. Praesent nec leo mauris. Nullam tempus lorem viverra, maximus metus a, ornare odio. Suspendisse sed nisi sit amet ligula cursus fringilla. Nunc accumsan, velit a aliquam interdum, tortor enim molestie ligula, congue sagittis lorem neque aliquam turpis. Nam nec facilisis massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
