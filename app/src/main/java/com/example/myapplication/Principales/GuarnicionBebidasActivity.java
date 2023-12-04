@@ -38,14 +38,14 @@ public class GuarnicionBebidasActivity extends AppCompatActivity {
         btnPlusArroz = findViewById(R.id.btnPlusArroz);
         btnPlusNuggets = findViewById(R.id.btnPlusNuggets);
         btnMinusPatatas = findViewById(R.id.btnMinusPatatas);
-        btnMinusArroz = findViewById(R.id.btnMinusArroz);
-        btnMinusAlitas = findViewById(R.id.btnMinusAlitas);
-        btnMinusNuggets = findViewById(R.id.btnMinusNuggets);
+        //btnMinusArroz = findViewById(R.id.btnMinusArroz);
+        //btnMinusAlitas = findViewById(R.id.btnMinusAlitas);
+        //btnMinusNuggets = findViewById(R.id.btnMinusNuggets);
 //        /* -------- Textos de contadores de acompañantes --------- */
-        tvContPatatas = findViewById(R.id.tvContPatatas);
-        tvContArroz = findViewById(R.id.tvContArroz);
-        tvContAlitas = findViewById(R.id.tvContAlitas);
-        tvContNuggets = findViewById(R.id.tvContNuggets);
+        //tvContPatatas = findViewById(R.id.tvContPatatas);
+//        tvContArroz = findViewById(R.id.tvContArroz);
+//        tvContAlitas = findViewById(R.id.tvContAlitas);
+//        tvContNuggets = findViewById(R.id.tvContNuggets);
     }
     public void btnBack(View v){
         finish();

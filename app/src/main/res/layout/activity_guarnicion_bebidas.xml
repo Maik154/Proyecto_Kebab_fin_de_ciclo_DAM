@@ -10,6 +10,59 @@
     android:background="@color/fondo"
     tools:context=".Principales.ProductoActivity">
 
+    <TextView
+        android:id="@+id/tvContPatatas3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="222dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/btnPlusPatatas"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnMinusPatatas3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="207dp"
+        android:clickable="true"
+        app:layout_constraintStart_toEndOf="@+id/tvContPatatas3"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack"
+        app:srcCompat="@drawable/foto_minus_foreground" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnMinusPatatas4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        app:layout_constraintStart_toEndOf="@+id/tvContPatatas4"
+        app:layout_constraintTop_toBottomOf="@+id/btnMinusPatatas2"
+        app:srcCompat="@drawable/foto_minus_foreground" />
+
+    <TextView
+        android:id="@+id/tvContPatatas2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="46dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/btnPlusAlitas"
+        app:layout_constraintTop_toBottomOf="@+id/tvContPatatas" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnMinusPatatas2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        app:layout_constraintStart_toEndOf="@+id/tvContPatatas2"
+        app:layout_constraintTop_toBottomOf="@+id/btnMinusPatatas"
+        app:srcCompat="@drawable/foto_minus_foreground" />
+
     <ImageButton
         android:id="@+id/btnBack"
         android:layout_width="88dp"
@@ -18,17 +71,6 @@
         android:layout_marginTop="24dp"
         android:backgroundTint="@color/fondo"
         android:src="@drawable/icono_volver_foreground"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView26"
-        android:layout_width="372dp"
-        android:layout_height="191dp"
-        android:layout_marginTop="92dp"
-        android:src="@mipmap/foto_comida_demo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -47,10 +89,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="207dp"
         android:text="Patatas"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView26" />
+        app:layout_constraintTop_toBottomOf="@+id/btnBack" />
 
     <CheckBox
         android:id="@+id/chkArroz"
@@ -120,94 +162,52 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="53dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="207dp"
         android:clickable="true"
         app:layout_constraintStart_toEndOf="@+id/chkPatatas"
-        app:layout_constraintTop_toBottomOf="@+id/imageView26"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack"
         app:srcCompat="@drawable/foto_plus_foreground" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnMinusArroz"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="8dp"
-        android:clickable="true"
-        app:layout_constraintStart_toEndOf="@+id/btnPlusArroz"
-        app:layout_constraintTop_toBottomOf="@+id/btnMinusPatatas"
-        app:srcCompat="@drawable/foto_minus_foreground" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnMinusAlitas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="8dp"
-        android:clickable="true"
-        app:layout_constraintStart_toEndOf="@+id/btnPlusAlitas"
-        app:layout_constraintTop_toBottomOf="@+id/btnMinusArroz"
-        app:srcCompat="@drawable/foto_minus_foreground" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnMinusNuggets"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="8dp"
-        android:clickable="true"
-        app:layout_constraintStart_toEndOf="@+id/btnPlusNuggets"
-        app:layout_constraintTop_toBottomOf="@+id/btnMinusAlitas"
-        app:srcCompat="@drawable/foto_minus_foreground" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btnMinusPatatas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="8dp"
         android:clickable="true"
-        app:layout_constraintStart_toEndOf="@+id/btnPlusPatatas"
-        app:layout_constraintTop_toBottomOf="@+id/imageView26"
+        app:layout_constraintStart_toEndOf="@+id/tvContPatatas"
+        app:layout_constraintTop_toBottomOf="@+id/btnMinusPatatas3"
         app:srcCompat="@drawable/foto_minus_foreground" />
 
     <TextView
         android:id="@+id/tvContPatatas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="56dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/btnMinusPatatas"
-        app:layout_constraintTop_toBottomOf="@+id/imageView26" />
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="46dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/btnPlusArroz"
+        app:layout_constraintTop_toBottomOf="@+id/tvContPatatas3" />
 
     <TextView
-        android:id="@+id/tvContArroz"
+        android:id="@+id/tvContPatatas4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="44dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/btnMinusArroz"
-        app:layout_constraintTop_toBottomOf="@+id/tvContPatatas" />
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="43dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/btnPlusNuggets"
+        app:layout_constraintTop_toBottomOf="@+id/tvContPatatas2" />
 
-    <TextView
-        android:id="@+id/tvContAlitas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="44dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/btnMinusAlitas"
-        app:layout_constraintTop_toBottomOf="@+id/tvContArroz" />
-
-    <TextView
-        android:id="@+id/tvContNuggets"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="44dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/btnMinusNuggets"
-        app:layout_constraintTop_toBottomOf="@+id/tvContAlitas" />
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="396dp"
+        android:layout_height="302dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/complementos_foto_foreground" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

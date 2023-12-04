@@ -25,14 +25,13 @@ public class PantallaDeMenusActivity extends AppCompatActivity {
         imgKebab = findViewById(R.id.imgKebab);
         imgBebidas = findViewById(R.id.imgBebidas);
         imgGuarnicion = findViewById(R.id.imgGuarnicion);
-        imgPizza = findViewById(R.id.imgPizza);
+        //imgPizza = findViewById(R.id.imgPizza);
        // imgKebab.setOnClickListener(this::onClickImagenes/*, ""*/);
-
 
 
     }
 
-//para diferenciar los productos y que en la pantalla de Producto sepa qué productos has elegido
+    //para diferenciar los productos y que en la pantalla de Producto sepa qué productos has elegido
     //quiero enviarle un parametro al méotodo onClickImagenes, no he sido capaz.
     public void onClickImagenes(View view/*, String producto*/) {
         Intent i = new Intent(this, Producto.class);

@@ -7,72 +7,77 @@
     android:background="@color/fondo"
     tools:context=".Principales.PagoActivity">
 
-    <Button
-        android:id="@+id/button15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/roboto_regular"
-        android:onClick="btnPantProcesoPagoToPantCarrito"
-        android:text="@string/txtBtnPantProcesoPagoToPantCarrito"
-        tools:layout_editor_absoluteX="13dp"
-        tools:layout_editor_absoluteY="22dp" />
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/fondo"
+        android:onClick="btnPantMenusToPantInicio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icono_volver_foreground" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="30dp"
         android:text="Total: "
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button15" />
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
 
     <TextView
         android:id="@+id/textView43"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="84dp"
         android:text="x"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button15" />
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
 
     <View
         android:id="@+id/divider"
         android:layout_width="409dp"
         android:layout_height="1dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="32dp"
         android:background="?android:attr/listDivider"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button15" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton8" />
 
     <View
         android:id="@+id/divider2"
         android:layout_width="409dp"
         android:layout_height="1dp"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="23dp"
         android:background="?android:attr/listDivider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/button17" />
 
     <View
         android:id="@+id/divider3"
         android:layout_width="409dp"
         android:layout_height="1dp"
+        android:layout_marginTop="24dp"
         android:background="?android:attr/listDivider"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="324dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <View
         android:id="@+id/divider4"
         android:layout_width="409dp"
         android:layout_height="1dp"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="23dp"
         android:background="?android:attr/listDivider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -83,12 +88,12 @@
         android:id="@+id/divider5"
         android:layout_width="409dp"
         android:layout_height="1dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="23dp"
         android:background="?android:attr/listDivider"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton19" />
 
     <TextView
         android:id="@+id/textView6"
@@ -101,30 +106,23 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout6" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="168dp"
-        android:layout_height="44dp"
-        android:text="Atras"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="663dp" />
-
-    <Button
         android:id="@+id/button5"
-        android:layout_width="163dp"
-        android:layout_height="44dp"
-        android:layout_marginEnd="28dp"
+        android:layout_width="383dp"
+        android:layout_height="48dp"
         android:layout_marginBottom="24dp"
         android:text="Confirmar pedido"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout6"
-        android:layout_width="311dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="82dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider">
+        android:layout_width="290dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:layout_editor_absoluteX="2dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -136,9 +134,9 @@
         android:id="@+id/button17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="92dp"
-        android:text="@string/txtBtnEditar"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="95dp"
+        android:text="Guardar"
         app:layout_constraintStart_toEndOf="@+id/textInputLayout6"
         app:layout_constraintTop_toBottomOf="@+id/divider" />
 
@@ -190,19 +188,20 @@
         android:id="@+id/button19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
         android:onClick="btnPantProcesoPagoToPantTerminos"
         android:text="Términos y condiciones"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout7" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton16" />
 
     <RadioButton
         android:id="@+id/radioButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toStartOf="@+id/button19"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout7" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toEndOf="@+id/button19"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton16" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
